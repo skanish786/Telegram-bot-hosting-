@@ -1922,7 +1922,7 @@ def main_menu_handler(message):
                 ban_notification += "If you think this is a mistake, please contact the owner."
                 
                 ikb = types.InlineKeyboardMarkup()
-                ikb.add(types.InlineKeyboardButton("📞 Contact @rdxking1000", url=OWNER_TG_URL))
+                ikb.add(types.InlineKeyboardButton("📞 Contact @skanish143", url=OWNER_TG_URL))
                 
                 try:
                     bot.send_message(
