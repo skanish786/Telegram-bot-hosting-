@@ -30,7 +30,7 @@ OWNER_TG_URL = f"https://t.me/SkAnish143"
 
 # Channels for force-subscribe
 CHANNEL_IDS = [
-    int(os.getenv("CHANNEL_ID_1", ""))
+    int(os.getenv("CHANNEL_ID_1", "1002027547140"))
 ]
 CHANNEL_LINKS = [
     os.getenv("CHANNEL_LINK_1", "https://t.me/addlist/LAk5ato5XLoyN2M1")
