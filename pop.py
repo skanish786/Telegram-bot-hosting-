@@ -24,7 +24,7 @@ BOT_TOKEN = "8644273175:AAH3AmVfVJxaNQTbk_r3w-Fg3Ar36A_YeN4"
 if not BOT_TOKEN:
     raise RuntimeError("Please set BOT_TOKEN (env or in code).")
 
-OWNER_ID = int(os.getenv("921287475", "id yha pe "))
+OWNER_ID = int(os.getenv("921287475"))
 OWNER_USERNAME = "@SkAnish143"
 OWNER_TG_URL = f"https://t.me/SkAnish143"
 
