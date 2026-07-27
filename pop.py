@@ -82,7 +82,7 @@ PLANS = {
     "pro": {
         "name": "🥇 Pro Plan",
         "price": "199₹",
-        "duration_days": 30,
+        "duration_days": 60,
         "max_bots": 10,
         "upload_limit_mb": 100,
         "credits": 100,
@@ -92,24 +92,24 @@ PLANS = {
             "✅ 100MB Upload Limit",
             "✅ 100 Credits",
             "✅ High Priority",
-            "✅ 30 Days Validity",
+            "✅ 60 Days Validity",
             "✅ Priority Support"
         ]
     },
     "premium": {
         "name": "👑 Premium Plan",
         "price": "299₹",
-        "duration_days": 30,
-        "max_bots": 20,
-        "upload_limit_mb": 200,
-        "credits": 250,
+        "duration_years": 2,
+        "max_bots": 50,
+        "upload_limit_mb": 500,
+        "credits": 500,
         "priority": 3,
         "features": [
-            "✅ 20 Bots Hosting",
-            "✅ 200MB Upload Limit",
-            "✅ 250 Credits",
+            "✅ 50 Bots Hosting",
+            "✅ 500MB Upload Limit",
+            "✅ 500 Credits",
             "✅ Highest Priority",
-            "✅ 30 Days Validity",
+            "✅ 2 years Validity",
             "✅ 24/7 Priority Support",
             "✅ Auto Backup"
         ]
