@@ -20,7 +20,7 @@ from telebot import types
 # ---------------------------
 # Configuration
 # ---------------------------
-BOT_TOKEN = "8644273175:AAH3AmVfVJxaNQTbk_r3w-Fg3Ar36A_YeN4"
+BOT_TOKEN = "8605139915:AAG18P1XoP83DedwP18wwiT0xp7p327SGcI"
 if not BOT_TOKEN:
     raise RuntimeError("Please set BOT_TOKEN (env or in code).")
 
