@@ -67,12 +67,12 @@ PLANS = {
         "name": "🥈 Basic Plan",
         "price": "99₹",
         "duration_days": 30,
-        "max_bots": 2,
+        "max_bots": 5,
         "upload_limit_mb": 50,
         "credits": 30,
         "priority": 1,
         "features": [
-            "✅ 2 Bots Hosting",
+            "✅ 5 Bots Hosting",
             "✅ 50MB Upload Limit",
             "✅ 30 Credits",
             "✅ Medium Priority",
@@ -83,12 +83,12 @@ PLANS = {
         "name": "🥇 Pro Plan",
         "price": "199₹",
         "duration_days": 30,
-        "max_bots": 5,
+        "max_bots": 10,
         "upload_limit_mb": 100,
         "credits": 100,
         "priority": 2,
         "features": [
-            "✅ 5 Bots Hosting",
+            "✅ 10 Bots Hosting",
             "✅ 100MB Upload Limit",
             "✅ 100 Credits",
             "✅ High Priority",
@@ -100,12 +100,12 @@ PLANS = {
         "name": "👑 Premium Plan",
         "price": "299₹",
         "duration_days": 30,
-        "max_bots": 10,
+        "max_bots": 20,
         "upload_limit_mb": 200,
         "credits": 250,
         "priority": 3,
         "features": [
-            "✅ 10 Bots Hosting",
+            "✅ 20 Bots Hosting",
             "✅ 200MB Upload Limit",
             "✅ 250 Credits",
             "✅ Highest Priority",
@@ -185,10 +185,10 @@ def get_user(uid: int) -> Dict[str, Any]:
         db[uid_s] = DEFAULT_USER.copy()
         if uid == OWNER_ID:
             db[uid_s]["admin"] = True
-            db[uid_s]["upload_mb"] = 500
-            db[uid_s]["credits"] = 9999
+            db[uid_s]["upload_mb"] = 5000
+            db[uid_s]["credits"] = 999999
             db[uid_s]["plan"] = "premium"
-            db[uid_s]["max_bots"] = 999
+            db[uid_s]["max_bots"] = 99999
         db[uid_s]["joined_at"] = datetime.now().isoformat()
         save_db()
     return db[uid_s]
@@ -1622,7 +1622,7 @@ def main_menu_handler(message):
                 "👑 *Owner Plan:*\n\n"
                 f"💰 Credits: `{user['credits']}` (Unlimited)\n"
                 f"☁️ Max Upload: `{user['upload_mb']} MB`\n"
-                f"🤖 Max Bots: `{user.get('max_bots', 999)}`\n"
+                f"🤖 Max Bots: `{user.get('max_bots', 99999)}`\n"
                 f"📦 Plan: {PLANS[user.get('plan', 'premium')]['name']}\n"
                 f"📅 Joined: `{user.get('joined_at', 'Unknown')[:10] if 'joined_at' in user else 'Unknown'}`"
             )
@@ -1695,7 +1695,7 @@ def main_menu_handler(message):
                     ban_notification += "If you think this is a mistake, please contact the owner."
                     
                     ikb = types.InlineKeyboardMarkup()
-                    ikb.add(types.InlineKeyboardButton("📞 Contact @rdxking1000", url=OWNER_TG_URL))
+                    ikb.add(types.InlineKeyboardButton("📞 Contact @SkAnish143", url=OWNER_TG_URL))
                     
                     try:
                         bot.send_message(
@@ -1847,12 +1847,12 @@ def main_menu_handler(message):
         contact_text = (
             "📞 *Contact Owner*\n\n"
             "If you have any questions or need help, contact:\n"
-            f"👤 Username: @rdxking1000\n"
-            f"🆔 Owner ID: `8322773496`"
+            f"👤 Username: @SkAnish143\n"
+            f"🆔 Owner ID: `921287475`"
         )
         
         ikb = types.InlineKeyboardMarkup()
-        ikb.add(types.InlineKeyboardButton("📞 Contact @rdxking1000", url=OWNER_TG_URL))
+        ikb.add(types.InlineKeyboardButton("📞 Contact @SkAnish143", url=OWNER_TG_URL))
         
         bot.send_message(message.chat.id, contact_text, reply_markup=ikb, parse_mode="Markdown")
     
